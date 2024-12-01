@@ -8,7 +8,7 @@ acc = 0
 right_count = Counter(right)
 
 for i in range(len(left)):
-    #acc = abs(left[i] - right[i]) #part1
+    #acc += abs(left[i] - right[i]) #part1
     acc += abs(left[i]) * right_count.get(left[i], 0) #part2
 
 print(acc)
